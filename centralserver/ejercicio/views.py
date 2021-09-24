@@ -7,3 +7,6 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'listas.html')
 # Create your views here.
+
+def list_view(request):
+    return render(request, 'listas1.html')
