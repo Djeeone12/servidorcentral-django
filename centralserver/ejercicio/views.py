@@ -5,5 +5,5 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render('app/listas.html')
+    return render(request, 'listas.html')
 # Create your views here.
