@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 import requests
 
-
+#sad
 
 def index(request):
     return render(request, 'listas.html')
