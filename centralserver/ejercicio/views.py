@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.http import JsonResponse
 import requests
+from django.contrib.auth.models import User
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger # for pagination
 
 #sad
 
@@ -23,6 +25,7 @@ def poke_get_res(request):
     r = requests.get(pokeURL).json()
     return JsonResponse(r, safe=False)
 
+
 def poke_post(request):
     return render(request, 'listas1.html')
 
@@ -31,3 +34,10 @@ def poke_put(request):
 
 def poke_delete(request):
     return render(request, 'listas1.html')
+
+
+
+
+
+
+

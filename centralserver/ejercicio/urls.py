@@ -10,4 +10,6 @@ urlpatterns = [
     path('poke2/', views.poke_post, name='poke2'),
     path('poke3/', views.poke_put, name='poke3'),
     path('poke4/', views.poke_delete, name='poke4'),
+    #path('grades/', views.mongod_get,name='grades'),
+      
 ]
